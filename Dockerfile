@@ -12,6 +12,8 @@ RUN apt-get update && \
         pkg-config
 
 RUN mkdir /build
+RUN mkdir /output
+
 ADD . /build
 
 # This builds the program and copies it to /output
